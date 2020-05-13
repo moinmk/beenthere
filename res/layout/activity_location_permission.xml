@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".permissions_activity.LocationPermission"
+    android:theme="@style/customDarkTheme">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="access location"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="250dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/centurygothic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/heading"
+        android:text="permission required to access device location so we can display your current location"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="15sp"
+        android:padding="30dp"
+        android:fontFamily="@font/centurygothic"/>
+
+    <Button
+        android:id="@+id/grantPermission"
+        android:layout_width="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_height="wrap_content"
+        android:text="grant permission"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/centurygothic"
+        android:layout_marginBottom="100dp"
+        />
+
+</RelativeLayout>

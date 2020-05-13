@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/beenthere_logo"
+        android:width="512px"
+        android:height="512px"
+        />
+</layer-list>

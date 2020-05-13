@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/customDarkTheme">
+<LinearLayout
+    android:id="@+id/progressbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progressbar"
+        android:layout_marginTop="300dp"
+        />
+
+</LinearLayout>
+<RelativeLayout
+    android:id="@+id/editProfileLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.EditProfile"
+    android:visibility="gone"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:text="edit profile"
+        android:fontFamily="@font/centurygothic"
+        android:layout_margin="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageContainer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="150dp"
+        android:elevation="50dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_height="105dp"
+            android:layout_width="105dp"
+            android:src="@drawable/default_profile_picture"
+            android:scaleType="centerCrop"
+            android:translationX="-2dp"
+            android:translationY="-2dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/changeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageContainer"
+        android:layout_centerHorizontal="true"
+        android:text="change profile image"
+        android:textAllCaps="false"
+        android:background="#00000000"
+        android:textSize="15sp"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/centurygothic"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changeImage"
+        android:textColorHint="#8F8F8F"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.TextInputLayout">
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:textColor="@color/colorText"
+            android:backgroundTint="@color/colorSecondary"
+            android:textSize="17sp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/centurygothic"
+            android:padding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutUserBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutUsername"
+        android:textColorHint="#8F8F8F"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.TextInputLayout">
+
+        <EditText
+            android:id="@+id/userBio"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="bio"
+            android:textColor="@color/colorText"
+            android:backgroundTint="@color/colorSecondary"
+            android:textSize="17sp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/centurygothic"
+            android:padding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/centurygothic"
+        android:background="#00000000"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/centurygothic"
+        android:background="#00000000"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"/>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".getstarted.GetStarted"
+    android:background="@drawable/gradient_backgroud_secondarycolor">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="656dp"
+        android:id="@+id/viewpager">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="let's get started"
+        android:fontFamily="@font/centurygothic"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button_black"
+        android:textColor="@color/colorText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/getStartedButton"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        ></LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="skip"
+        android:textColor="@color/colorText"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:fontFamily="@font/centurygothic"
+        android:id="@+id/skipButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/centurygothic"
+        android:text="next"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorText"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:id="@+id/nextButton"/>
+
+</RelativeLayout>

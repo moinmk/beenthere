@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beenthere</string>
+    <string name="default_web_client_id">708063811352-c4r7ggne79evm6oc5hmonq3oacfb3maq.apps.googleusercontent.com</string>
+
+    <string name="google_maps_key">AIzaSyBe74dpgva1lkfQ2EgJYi67hWJJJ9PL2E4</string>
+
+</resources>

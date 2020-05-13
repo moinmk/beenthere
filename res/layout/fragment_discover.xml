@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".discover.discoverFragment">
+
+    <!--    fragment to display google map-->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--<com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        style="@style/MaterialSearchBarLight"
+        app:mt_speechMode="false"
+        app:mt_hint="search a place"
+        app:mt_maxSuggestionsCount="10"
+        app:mt_placeholder="search any place"
+        app:mt_searchBarColor="#EDFFFFFF"
+        app:mt_placeholderColor="#D36F6F6F"
+        app:mt_textCursorTint="#131313"
+        app:mt_roundedSearchBarEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:elevation="0dp"
+        android:outlineProvider="bounds"
+        />-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:elevation="50dp"
+        app:cardCornerRadius="5dp"
+        >
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/addAsVisited"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:background="@drawable/rounded_button"
+        android:text="add places as visited"
+        android:textAllCaps="false"
+        android:fontFamily="@font/centurygothic"
+        android:visibility="gone"
+        />
+</RelativeLayout>
